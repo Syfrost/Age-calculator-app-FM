@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Age calculator app | Frontend Mentor by Cedric G.</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; }
+    .attribution a { color: hsl(259, 100%, 65%); }
+  </style>
+</head>
+<body>
+<div class="window">
+  <form class="boxAgeField">
+    <div class="inputGroup">
+      <label for="day">Day</label>
+      <input type="number" name="Day" id="day" placeholder="DD">
+      <div class="error-message"></div>
+    </div>
+    <div class="inputGroup">
+      <label for="month">Month</label>
+      <input type="number" name="Month" id="month" placeholder="MM">
+      <div class="error-message"></div>
+    </div>
+    <div class="inputGroup">
+      <label for="year">Year</label>
+      <input type="number" name="Year" id="year" placeholder="YYYY">
+      <div class="error-message"></div>
+    </div>
+  </form>
+  <div class="boxSubmit">
+    <div class="middle-line"></div>
+    <button class="arrowButton" onclick="calculateOld()"><img src="assets/images/icon-arrow.svg" alt="arrow icon"></button>
+  </div>
+  <div class="boxResult">
+    <div class="year">
+      <span class="number" id="yearNumber">--</span>
+      <span>&nbsp;</span>
+      <span class="text" id="yearText">year</span>
+    </div>
+    <div class="month">
+      <span class="number" id="monthNumber">--</span>
+      <span>&nbsp;</span>
+      <span class="text" id="monthText">month</span>
+    </div>
+    <div class="day">
+      <span class="number" id="dayNumber">--</span>
+      <span>&nbsp;</span>
+      <span class="text" id="dayText">day</span>
+    </div>
+  </div>
+</div>
+<div class="attribution">
+  Challenge by&nbsp; <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+  Coded by&nbsp; <a href="#">GEORGES Cedric</a>.
+</div>
+</body>
+</html>

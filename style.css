@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'Poppins Extra Bold Italic';
+    src: url('assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Poppins Bold";
+    src: url("assets/fonts/Poppins-Bold.ttf");
+}
+@font-face {
+    font-family: "Poppins Regular";
+    src: url("assets/fonts/Poppins-Regular.ttf");
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #F0F0F0;
+}
+.window {
+    display: flex;
+    flex-direction: column;
+    height: 410px;
+    width: 300px;
+    padding: 20px;
+    margin: 0;
+    border-radius: 25px 25px 110px 25px;
+    background-color: hsl(0, 0%, 100%);
+}
+.boxAgeField {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.boxSubmit {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+}
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.inputGroup label {
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    font-family: "Poppins Bold", sans-serif;
+    font-size: 12px;
+    color: #6a6a6a;
+}
+.inputGroup input {
+    height: 45px;
+    width: 68px;
+    border-radius: 5px;
+    border: 1px solid #dadada;
+    font-family: "Poppins Bold", sans-serif;
+    font-size: 20px;
+    padding-left: 15px;
+    transition: border 0.5s ease;
+}
+.inputGroup input::placeholder {
+    color: #000000;
+}
+.inputGroup input:focus {
+    outline: none;
+    border: 1px solid hsl(259, 100%, 65%);
+    transition: border 0.5s ease;
+}
+.arrowButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    height: 65px;
+    width: 65px;
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.arrowButton:hover {
+    background-color: #111111;
+    transition: background-color 0.2s ease;
+}
+.arrowButton img {
+    height: 25px;
+}
+.middle-line {
+    position: absolute;
+    z-index: 2;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    background-color: #ebebeb;
+}
+.boxResult {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    height: auto;
+    margin-left: 5%;
+    font-family: 'Poppins Extra Bold Italic', sans-serif;
+    font-size: 54px;
+}
+.year, .month, .day{
+    display: flex;
+    align-items: flex-end;
+    height: 60px;
+}
+.number {
+    color: hsl(259, 100%, 65%);
+}
+.attribution { /*Footer Frontend Mentor*/
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100vh;
+    margin-bottom: 10px;
+    font-family: 'Poppins Regular', sans-serif;
+}
+.error-message {
+    font-family: 'Poppins Regular', sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+}
+@media (min-width: 765px) {
+    .boxSubmit {
+        justify-content: flex-end;
+    }
+    .arrowButton {
+        height: 90px;
+        width: 90px;
+    }
+    .arrowButton img {
+        height: 45px;
+    }
+    .window {
+        width: 765px;
+        height: 600px;
+        border-radius: 25px 25px 200px 25px;
+    }
+    .boxAgeField {
+        justify-content: flex-start;
+        margin-bottom: 0;
+    }
+    .inputGroup {
+        margin: 35px 10px 0 25px;
+    }
+    .inputGroup label {
+        letter-spacing: 4px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .inputGroup input {
+        height: 65px;
+        width: 130px;
+        border-radius: 9px;
+        font-size: 32px;
+        padding-left: 22px;
+        margin-bottom: 0;
+    }
+    .boxResult {
+        font-size: 100px;
+    }
+    .year, .month, .day{
+        height: 100px;
+    }
+}
